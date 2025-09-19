@@ -1,7 +1,7 @@
 # We're basically writing a script here to run inside our shell, that'll bring all of our services up, run the tests and
 # bring them down again.
 
-docker-compose up -d
+docker compose up -d
 
 # We're basically running a file that checks if all the services that we intend to run using the docker compose command
 # are up or not, once all of them are up successfully, only then proceed ahead.
@@ -13,4 +13,4 @@ echo '🟡 - Waiting for database to be ready...'
 
 npx prisma migrate dev --name "init"
 npm run test
-docker-compose down
+docker compose down
