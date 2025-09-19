@@ -1,4 +1,4 @@
 **/node_modules
 **/dist
 **/.env
-Lessons.txt
+/Lessons.txt
